@@ -12,9 +12,9 @@ TIPOS_PROCEDIMENTO = {
     5: ("Cirurgia", "nome da cirurgia"),
 }
 
-# ----------------------------------------------------------------------------
-# Funções de apoio
-# ----------------------------------------------------------------------------
+
+# FUNÇÕES DE APOIO
+
 def proximo_id(lista):
     if not lista:
         return 1
@@ -108,9 +108,8 @@ def pausar():
     input('\nAperte Enter para voltar ao menu...')
 
 
-# ----------------------------------------------------------------------------
-# Funções de consulta e exibição
-# ----------------------------------------------------------------------------
+# FUNÇÕES DE CONSULTA E EXIBIÇÃO
+
 def nome_do_tutor(clinica, animal):
     """Nome do tutor de um animal, tolerando vínculo quebrado."""
     if animal is None:
@@ -214,9 +213,8 @@ def cabecalho(titulo):
 
 clinica = carregar_db()
 
-# ----------------------------------------------------------------------------
-# Menu principal
-# ----------------------------------------------------------------------------
+# MENU PRINCIPAL
+
 while True:
     cabecalho("")
     print("  [1] Cadastro de animais e tutores")
@@ -230,9 +228,8 @@ while True:
     if input_usuario is None:
         continue
 
-    # ------------------------------------------------------------------------
-    # 1 - Cadastro de animais e tutores
-    # ------------------------------------------------------------------------
+    # CADASTRO DE ANIMAIS E TUTORES
+
     if input_usuario == 1:
         while True:
             cabecalho(" - Cadastro de animais e tutores")
@@ -410,9 +407,8 @@ while True:
             else:
                 print('Opção incorreta.')
 
-    # ------------------------------------------------------------------------
-    # 2 - Agendamento de procedimentos
-    # ------------------------------------------------------------------------
+    # AGENDAMENTO DE PROCEDIMENTOS
+
     elif input_usuario == 2:
         while True:
             cabecalho(" - Agendamento de procedimentos")
@@ -534,9 +530,8 @@ while True:
             else:
                 print('Opção incorreta.')
 
-    # ------------------------------------------------------------------------
-    # 3 - Carteira de vacinação
-    # ------------------------------------------------------------------------
+    # CARTEIRA DE VACINAÇÃO
+
     elif input_usuario == 3:
         while True:
             cabecalho(" - Carteira de vacinação")
@@ -578,9 +573,8 @@ while True:
             else:
                 print('Opção incorreta.')
 
-    # ------------------------------------------------------------------------
-    # 4 - Histórico e ficha do animal
-    # ------------------------------------------------------------------------
+    # HISTÓRICO E FICHA DO ANIMAL
+
     elif input_usuario == 4:
         while True:
             cabecalho(" - Histórico e ficha do animal")
